@@ -130,35 +130,53 @@ section h2 {
 }
 
 .project-card {
+    transition: transform 0.3s ease;
     background: #fff;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
 }
 
 .project-card img {
-    width: 100%;
     height: 200px;
     object-fit: cover;
+    border-bottom: 1px solid #eee;
 }
 
 .project-card h3 {
-    padding: 1rem;
+    color: #2c3e50;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
 }
 
 .project-card p {
-    padding: 0 1rem 1rem;
+    flex-grow: 1;
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.5;
 }
 
 .project-links {
     padding: 1rem;
-    display: flex;
-    gap: 1rem;
+    border-top: 1px solid #eee;
 }
 
 .project-links a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: #007bff;
+    color: white;
+    border-radius: 4px;
     text-decoration: none;
-    color: #007bff;
+    transition: background 0.3s ease;
+}
+
+.project-links a:hover {
+    background: #0056b3;
 }
 
 /* Skills Section */
