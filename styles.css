@@ -253,19 +253,34 @@ section h2::after {
 }
 
 .social-links {
-    margin-top: 2rem;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
 }
 
-.social-links a {
-    color: var(--grey-text);
-    font-size: 1.8rem;
-    margin: 0 1rem;
-    transition: color 0.3s ease, transform 0.3s ease;
+.social-icon {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+    filter: invert(1); /* Makes the icons white */
 }
 
-.social-links a:hover {
-    color: var(--primary-color);
+.social-icon:hover {
     transform: translateY(-3px);
+}
+
+.contact-info {
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.contact-info p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
 }
 
 /* Footer */
