@@ -184,6 +184,92 @@ section h2::after {
     margin-bottom: 1rem;
 }
 
+/* Experience Section Styles */
+.experience {
+    padding: 5rem 2rem;
+    background-color: var(--darker-bg);
+}
+
+.experience-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.experience-category {
+    margin-bottom: 4rem;
+}
+
+.experience-category h3 {
+    text-align: center;
+    color: var(--accent-color);
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+}
+
+.company-grid, .consultancy-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.company-card {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.company-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 25px rgba(0,0,0,0.2);
+}
+
+.company-logo {
+    width: 120px;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 1.5rem;
+    filter: brightness(0.9);
+}
+
+.company-details h4 {
+    color: var(--light-text);
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.company-name {
+    color: var(--accent-color);
+    font-weight: 500;
+    margin-bottom: 0.3rem;
+}
+
+.duration {
+    color: var(--grey-text);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.achievements {
+    list-style: none;
+    padding: 0;
+}
+
+.achievements li {
+    color: var(--grey-text);
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.achievements li::before {
+    content: "▹";
+    position: absolute;
+    left: 0;
+    color: var(--accent-color);
+}
+
 /* Projects Section */
 .project-grid {
     max-width: 1200px;
@@ -374,6 +460,14 @@ footer {
     
     .hero h1 {
         font-size: 2.5rem;
+    }
+    
+    .company-grid, .consultancy-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .company-card {
+        padding: 1.5rem;
     }
 } 
 
