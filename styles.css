@@ -151,13 +151,19 @@ section h2::after {
     align-items: center;
 }
 
+.about-text {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
 .about-intro {
     font-size: 1.3rem;
     color: var(--light-text);
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     line-height: 1.6;
     text-align: center;
-    max-width: 800px;
+    width: 100%;
 }
 
 .expertise-grid {
@@ -165,7 +171,7 @@ section h2::after {
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     width: 100%;
-    max-width: 900px;
+    margin: 0 auto;
 }
 
 .expertise-item {
@@ -437,7 +443,8 @@ footer {
     
     .about-intro {
         font-size: 1.1rem;
-        text-align: left;
+        text-align: center;
+        padding: 0 1rem;
     }
     
     .skills-grid {
@@ -547,7 +554,7 @@ html {
 
     .about-intro {
         font-size: 1.1rem;
-        text-align: left;
+        text-align: center;
     }
 
     .expertise-grid {
