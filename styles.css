@@ -141,36 +141,34 @@ section h2::after {
     border-radius: 2px;
 }
 
-/* About Section */
+/* About Section Styles */
+.about {
+    text-align: center;
+}
+
 .about-content {
     max-width: 1000px;
     margin: 0 auto;
     padding: 0 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .about-text {
-    width: 100%;
     max-width: 800px;
-    margin: 0 auto;
+    margin: 0 auto 3rem auto;
 }
 
 .about-intro {
     font-size: 1.3rem;
     color: var(--light-text);
-    margin-bottom: 3rem;
     line-height: 1.6;
     text-align: center;
-    width: 100%;
 }
 
 .expertise-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
-    width: 100%;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
