@@ -143,15 +143,9 @@ section h2::after {
 
 /* About Section */
 .about-content {
-    display: grid;
-    grid-template-columns: 3fr 2fr;
-    gap: 4rem;
-    align-items: center;
-}
-
-.about-image img {
-    width: 100%;
-    border-radius: 10px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 2rem;
 }
 
 .about-intro {
@@ -159,6 +153,7 @@ section h2::after {
     color: var(--light-text);
     margin-bottom: 2rem;
     line-height: 1.6;
+    text-align: center;
 }
 
 .expertise-grid {
@@ -182,6 +177,10 @@ section h2::after {
 .expertise-item h3 {
     color: var(--accent-color);
     margin-bottom: 1rem;
+}
+
+.expertise-item p {
+    color: var(--grey-text);
 }
 
 /* Experience Section Styles */
@@ -422,11 +421,16 @@ footer {
     }
     
     .about-content {
-        grid-template-columns: 1fr;
+        padding: 0 1rem;
     }
     
     .expertise-grid {
         grid-template-columns: 1fr;
+    }
+    
+    .about-intro {
+        font-size: 1.1rem;
+        text-align: left;
     }
     
     .skills-grid {
@@ -531,12 +535,12 @@ html {
 
     /* About Section */
     .about-content {
-        grid-template-columns: 1fr;
-        gap: 2rem;
+        padding: 0 1rem;
     }
 
     .about-intro {
         font-size: 1.1rem;
+        text-align: left;
     }
 
     .expertise-grid {
