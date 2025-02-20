@@ -146,6 +146,9 @@ section h2::after {
     max-width: 1000px;
     margin: 0 auto;
     padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .about-intro {
@@ -154,12 +157,15 @@ section h2::after {
     margin-bottom: 2rem;
     line-height: 1.6;
     text-align: center;
+    max-width: 800px;
 }
 
 .expertise-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
+    width: 100%;
+    max-width: 900px;
 }
 
 .expertise-item {
@@ -168,6 +174,7 @@ section h2::after {
     border-radius: 10px;
     box-shadow: 0 4px 20px rgba(0,0,0,0.2);
     transition: transform 0.3s ease;
+    text-align: left;
 }
 
 .expertise-item:hover {
