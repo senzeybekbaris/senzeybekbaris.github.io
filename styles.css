@@ -72,8 +72,8 @@ nav {
 
 /* Enhanced Hero Section */
 .hero {
-    min-height: 80vh;
-    padding-top: 60px;
+    min-height: 70vh;
+    padding-top: 20px;
     padding-bottom: 60px;
     display: flex;
     align-items: center;
@@ -88,6 +88,7 @@ nav {
     margin: 0 auto;
     padding: 2rem;
     animation: fadeIn 1s ease-out;
+    margin-top: -40px;
 }
 
 .hero h1 {
@@ -487,7 +488,11 @@ footer {
     
     .hero {
         min-height: auto;
-        padding-top: 40px;
+        padding-top: 10px;
+    }
+    
+    .hero-content {
+        margin-top: -20px;
     }
 } 
 
